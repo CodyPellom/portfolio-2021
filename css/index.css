@@ -1,0 +1,17 @@
+/**--------**/
+/*Fonts Start*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Major+Mono+Display&family=Press+Start+2P&display=swap');
+
+.Major-Mono-Display {
+    font-family: 'Major Mono Display';
+}
+
+.IBM-Plex-Mono {
+    font-family: 'IBM Plex Mono';
+}
+
+.Press-Start-2P {
+    font-family: 'Press Start 2P';
+}
+/*Fonts End*/
+/**--------**/
