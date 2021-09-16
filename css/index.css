@@ -1,17 +1,94 @@
-/**--------**/
-/*Fonts Start*/
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Major+Mono+Display&family=Press+Start+2P&display=swap');
-
-.Major-Mono-Display {
-    font-family: 'Major Mono Display';
+html {
+    background-color: black;
 }
 
-.IBM-Plex-Mono {
-    font-family: 'IBM Plex Mono';
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.Press-Start-2P {
-    font-family: 'Press Start 2P';
+#navbar {
+    height: 75px;
+    width: 100%;
+    background-color: rgb(80, 80, 80);
 }
-/*Fonts End*/
-/**--------**/
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#bgVideo {
+    min-width: 100%;
+    min-height: 100vh;
+    z-index: -1;
+    position: absolute;
+}
+
+.landing-section {
+    height: 100vh;
+    width: 100%;
+}
+
+.landing-section h1 {
+    color: white;
+    font-size: 24px;
+    margin-top: 25%;
+    margin-bottom: 5px;
+    z-index: 2;
+}
+
+.landing-section p {
+    color: white;
+    margin-top: 5px;
+}
+
+.intro-section {
+    height: 50vh;
+    width: 100%;
+}
+
+.intro-section h1 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 5%;
+}
+
+.intro-section img {
+    border-radius: 50%;
+    height: 200px;
+}
+
+.intro-section p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    width: 65%;
+    margin-top: 5%;
+}
+
+.gradient-section {
+    width: 100%;
+    height: 10vh;
+    background-image: linear-gradient(rgb(14, 14, 14), black );
+}
+
+.github-section {
+    width: 100%;
+    height: 25vh;
+}
+
+.github-section img {
+    width: 25%;
+}
+
+.github-section p {
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    width: 65%;
+    margin-top: 5%;
+}
