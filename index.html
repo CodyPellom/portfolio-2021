@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/flex.css">
     <link rel="stylesheet" href="./css/index.css">
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
     <title>Welcome</title>
 </head>
 
 <body>
     <div id="navbar" class="flex-row">
         <a href="#" class="Press-Start-2P">Home</a>
-        <a href="#" class="Press-Start-2P">Github</a>
+        <a href="#" id="githubLink" class="Press-Start-2P">Github</a>
         <a href="#" class="Press-Start-2P">About</a>
         <a href="#" class="Press-Start-2P">Contact</a>
     </div>
@@ -22,7 +26,7 @@
     <div class="landing-section flex-column">
         <h1 class="Major-Mono-Display">Cody Pellom</h1>
         <p class="IBM-Plex-Mono">Web Developer</p>
-        <video autoplay muted loop id="bgVideo">
+        <video autoplay muted loop class="bgVideo">
             <source src="./video/Smaller_BG_Video.mp4" type="video/mp4">
             <!-- <source src="https://drive.google.com/file/d/1PRJcnvTI0Sj5E7t8Nj9hfkQAdGE5Hba2/view?usp=sharing" type="video/mp4"> -->
         </video>
@@ -37,8 +41,8 @@
             Development is both my passion and my profession. To find out more about me, take a look around.</p>
     </div>
 
-    <div class="skills-section flex-column">
-        <div class="skills-square flex-column">
+    <div class="skills-section flex-column" id="skills-section">
+        <div class="skills-square flex-column" id="skills-square-1">
             <h1>Languages</h1>
             <p class="Press-Start-2P">HTML</p>
             <p class="Press-Start-2P">Javascript</p>
@@ -46,14 +50,14 @@
             <p class="Press-Start-2P">PHP</p>
             <p class="Press-Start-2P">C#</p>
         </div>
-        <div class="skills-square flex-column">
+        <div class="skills-square flex-column" id="skills-square-2">
             <h1>Frameworks</h1>
             <p class="Press-Start-2P">React</p>
             <p class="Press-Start-2P">Vue</p>
             <p class="Press-Start-2P">Angular</p>
             <p class="Press-Start-2P">Episerver</p>
         </div>
-        <div class="skills-square flex-column">
+        <div class="skills-square flex-column" id="skills-square-3">
             <h1>Software</h1>
             <p class="Press-Start-2P">Photoshop</p>
             <p class="Press-Start-2P">Illustrator</p>
@@ -63,21 +67,23 @@
         </div>
     </div>
 
-    <div class="about-section flex-column">
-        <h1 class="Major-Mono-Display">About</h1>
-        <p class="IBM-Plex-Mono">I grew up in north Georgia and worked in the service industry for over ten years. I have a vast amount of customer service experience which now
-            translate to effective client communication and frank team conversations about projects. 
+    <div class="about-section flex-column" id="aboutSection">
+        <h1 class="Major-Mono-Display text-align" id="aboutTitle">About</h1>
+        <p class="IBM-Plex-Mono text-align" id="aboutInfo">I worked in the service industry for over ten years. I have a vast amount of customer service experience which now
+            translates into effective client communication and frank team conversations about projects. 
         </p>
     </div>
 
-    <div class="github-section flex-column">
+    <div class="github-section flex-column" id="github-section">
         <a href="https://www.github.com/CodyPellom" class="text-align">
             <img src="./img/github-black.png" alt="">
         </a>
         <p class="IBM-Plex-Mono">I like to try new things with development. I shoot to learn something new every day. My
             Github has a wide variety of programming languages, projects and experiments.</p>
     </div>
+
+    
 </body>
-<script src="./js/index.js"></script>
+<script src="./scripts/main.js"></script>
 
 </html>
